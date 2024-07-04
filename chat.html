@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/poppins.css">
+</head>
+<body>
+<div class="chat-body" id="output-container">
+    <div class="messages" id="messages">
+        <center>
+            <p class="poppins-regular">Using Ai Gemini version Gemini 1.5 <br><spas>and learn more about <a href="https://ai.google.dev/gemini-api?gad_source=1&gclid=CjwKCAjwyo60BhBiEiwAHmVLJVGQR1G9DrPAhJ89aR1pFAi0LMrTqTJN02e14p6xQlFziA63Xn0AAhoC938QAvD_BwE" class="link-wi"> ai here.</a></span></p>
+        </center>
+        <!-- <div class="message user-message poppins-regular">
+            
+        </div> -->
+        <!-- <div class="message ai-message poppins-regular">
+            <img  src="./img/icons8-robot-48.png" alt="">
+            <p>Hello! I need some information about your services.</p>
+        </div> -->
+    </div>
+</div>
+<div class="chat-container">
+    <div class="chat-box">
+        <div class="chat-footer">
+            <form id="chat-form">
+                <input type="text" id="chat-input" class="poppins-regular" placeholder="Type your message here..." required>
+                <button type="button" class="btn-send poppins-regular" id="generate-button">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script type="importmap">
+    {
+      "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
+      }
+    }
+</script>
+<script type="module" src="./js/ai.js"></script>
+</body>
+</html>
